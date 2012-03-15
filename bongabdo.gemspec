@@ -11,8 +11,6 @@ Gem::Specification.new do |s|
   s.summary     = %q{Bengali date provider module}
   s.description = %q{Gregorian date to Bongabdo converter.}
 
-  s.rubyforge_project = "bongabdo"
-
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
