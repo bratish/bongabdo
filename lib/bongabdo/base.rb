@@ -3,18 +3,18 @@
 module Bongabdo
 
   MONTHS = [
-    {'bn' => "বৈশাখ", 'en' => "Boishakh" },
-    {'bn' => "জ্যৈষ্ঠ",'en' => "Joishtho"     },
-    {'bn' => "আষাঢ়", 'en' => "Asharh"   },
-    {'bn' => "শ্রাবণ", 'en' => "Srabon"   },
-    {'bn' => "ভাদ্র", 'en' => "Bhadro"   },
-    {'bn' => "আশ্বিন", 'en' => "Ashwin"   },
-    {'bn' => "কার্তিক", 'en' => "Kartik"   },
+    {'bn' => "বৈশাখ", 'en' => "Boishakh"},
+    {'bn' => "জ্যৈষ্ঠ",'en' => "Joishtho"},
+    {'bn' => "আষাঢ়", 'en' => "Asharh"},
+    {'bn' => "শ্রাবণ", 'en' => "Srabon"},
+    {'bn' => "ভাদ্র", 'en' => "Bhadro"},
+    {'bn' => "আশ্বিন", 'en' => "Ashwin"},
+    {'bn' => "কার্তিক", 'en' => "Kartik"},
     {'bn' => "অগ্রহায়ন", 'en' => "Agrohayon"},
-    {'bn' => "পৌষ", 'en' => "Poush"    },
-    {'bn' => "মাঘ", 'en' => "Magh"     },
-    {'bn' => "ফাল্গুন", 'en' => "Falgun"   },
-    {'bn' => "চৈত্র", 'en' => "Chaitro"  }
+    {'bn' => "পৌষ", 'en' => "Poush"},
+    {'bn' => "মাঘ", 'en' => "Magh"},
+    {'bn' => "ফাল্গুন", 'en' => "Falgun"},
+    {'bn' => "চৈত্র", 'en' => "Chaitro"}
   ]
 
   class Base
@@ -32,7 +32,8 @@ module Bongabdo
       self.new(Time.now.to_date)
     end
 
-    def to_s
+    def to_s(lang="bn")
+      return "#{@day}/#{@month}/#{@year}" if lang == "en"
       "#{@day.to_bn}/#{@month.to_bn}/#{@year.to_bn}"
     end
 

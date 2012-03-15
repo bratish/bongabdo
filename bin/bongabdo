@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+# encoding: utf-8
+
+begin
+  require 'bongabdo'
+rescue LoadError
+  require 'rubygems'
+  require 'bongabdo'
+end
+
+
+puts Bongabdo::Base.new(Time.now.to_date).long_format

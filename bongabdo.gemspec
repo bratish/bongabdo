@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.version     = Bongabdo::VERSION
   s.authors     = ["Bratish Goswami"]
   s.email       = ["bratishgoswami@gmail.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "https://github.com/bratish/bongabdo"
+  s.summary     = %q{Bengali date}
+  s.description = %q{Gregorian date to Bongabdo converter.}
 
   s.rubyforge_project = "bongabdo"
 
