@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Bratish Goswami"]
   s.email       = ["bratishgoswami@gmail.com"]
   s.homepage    = "https://github.com/bratish/bongabdo"
-  s.summary     = %q{Bengali date}
+  s.summary     = %q{Bengali date provider module}
   s.description = %q{Gregorian date to Bongabdo converter.}
 
   s.rubyforge_project = "bongabdo"
