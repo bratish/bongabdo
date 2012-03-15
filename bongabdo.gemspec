@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "bongabdo/version"
 
 Gem::Specification.new do |s|
-  s.name        = "Bongabdo"
+  s.name        = "bongabdo"
   s.version     = Bongabdo::VERSION
   s.authors     = ["Bratish Goswami"]
   s.email       = ["bratishgoswami@gmail.com"]
